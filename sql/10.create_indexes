@@ -1,5 +1,0 @@
-CREATE INDEX IF NOT EXISTS idx_silver_orders_customer_id
-ON silver.orders_enriched(customer_id);
---
-CREATE INDEX IF NOT EXISTS idx_silver_order_items_order_id
-ON silver.order_items_enriched(order.id);
