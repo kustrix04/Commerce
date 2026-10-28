@@ -51,5 +51,3 @@ SELECT
 FROM silver.orders_enriched oe
 GROUP BY oe.payment_status
 ORDER BY orders_count DESC;
-FROM previous_revenue pr
-ORDER BY pr.sales_month;
