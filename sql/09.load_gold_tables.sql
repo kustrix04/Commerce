@@ -162,8 +162,8 @@ SELECT
     mps.product_id,
     mps.product_name,
     mps.units_sold,
-    ROUND(mps.gross_revenue, 2) AS gross_revenue
-    ROUND(mps.net_revenue, 2) AS net_revenue
+    ROUND(mps.gross_revenue, 2) AS gross_revenue,
+    ROUND(mps.net_revenue, 2) AS net_revenue,
 	DENSE_RANK() OVER(
 		PARTITION BY mps.sales_month, mps.category
 		ORDER BY mps.net_revenue DESC
