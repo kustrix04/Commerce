@@ -14,7 +14,7 @@ SELECT
 	upper(trim(c.country)) AS country,
 	c.signup_date AS signup_date,
 	lower(trim(c.acquisition_channel)) AS acquisition_channel
-FROM bronze.customers c
+FROM bronze.customers c;
 COMMIT;
 BEGIN;
 INSERT INTO silver.products_clean(
