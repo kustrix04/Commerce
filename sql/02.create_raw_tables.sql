@@ -3,7 +3,7 @@ CREATE TABLE raw.customers(
 	customer_name varchar(100) NOT NULL,
 	email varchar(150),
 	country varchar(2) NOT NULL,
-	singup_date date NOT NULL,
+	signup_date date NOT NULL,
 	acquisition_channel varchar(30)
 );
 CREATE TABLE raw.products(
