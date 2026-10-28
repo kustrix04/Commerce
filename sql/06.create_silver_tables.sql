@@ -3,7 +3,7 @@ CREATE TABLE silver.customers_clean(
 	customer_name varchar(100),
 	email varchar(150),
 	country varchar(2),
-	singup_date date,
+	signup_date date,
 	acquisition_channel varchar(30)
 );
 CREATE TABLE silver.products_clean(
